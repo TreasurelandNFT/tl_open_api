@@ -1,7 +1,14 @@
-API
-===
+Open API
+========
 
-.. autosummary::
-   :toctree: generated
+NFT
+---
+.. openapi:: specs/nft.yml
 
-   lumache
+Collection
+----------
+.. openapi:: specs/collection.yml
+
+Launchpad
+---------
+.. openapi:: specs/launchpad.yml

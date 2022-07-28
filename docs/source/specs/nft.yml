@@ -1,0 +1,61 @@
+swagger: "2.0"
+info:
+  title: Batcomputer API
+  version: "1.0.0"
+host: api.batcomputer.com
+paths:
+  /v1/account/asset:
+    get:
+      tags:
+      - "nft"
+      summary: "用户查看自己拥有的nft"
+      parameters:
+      - in: "query"
+        name: "chain_id"
+        type: integer
+      - in: "query"
+        name: "owner"
+        type: string
+      - in: "query"
+        name: "page_no"
+        type: integer
+      - in: "query"
+        name: "page_size"
+        type: integer
+      responses:
+        "200":
+          description: "successful"
+  /v1/nft/item_recommend:
+    get:
+      tags:
+      - "nft"
+      summary: "nft推荐排行"
+      responses:
+        "200":
+          description: "successful"
+  /v1/nft/detail:
+    get:
+      tags:
+      - "nft"
+      summary: "购买页的nft单个详情"
+      responses:
+        "200":
+          description: "successful"
+  /v1/nft/history:
+    get:
+      tags:
+      - "nft"
+      summary: "nft交易历史"
+      parameters:
+      - in: "query"
+        name: "chain_id"
+        type: integer
+      - in: "query"
+        name: "contract"
+        type: string
+      - in: "query"
+        name: "token_id"
+        type: string
+      responses:
+        "200":
+          description: "successful"

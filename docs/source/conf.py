@@ -1,10 +1,13 @@
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../..'))
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Treasureland'
+copyright = '2022, HeptaneL'
+author = 'HeptaneL'
 
 release = '0.1'
 version = '0.1.0'
@@ -17,6 +20,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
+    'sphinxcontrib.openapi',
 ]
 
 intersphinx_mapping = {

@@ -1,34 +1,18 @@
 Usage
 =====
 
-.. _installation:
+.. _introduction:
 
-Installation
-------------
+Endpoint
+--------
 
-To use Lumache, first install it using pip:
+all endpoints will require an API Key. Please refer to next chapter regarding API key creation.
 
-.. code-block:: console
+API Key Setup
+-------------
 
-   (.venv) $ pip install lumache
+.. warning:: Never share your API key/secret to ANYONE.
 
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
+Rate Limiting
+-------------
 
