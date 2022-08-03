@@ -1,7 +1,5 @@
-import os
-import sys
-sys.path.insert(0, os.path.abspath('../..'))
 # Configuration file for the Sphinx documentation builder.
+master_doc = 'index'
 
 # -- Project information
 
@@ -20,7 +18,8 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinxcontrib.openapi',
+    "sphinxcontrib.httpdomain",
+    "sphinx_tabs.tabs",
 ]
 
 intersphinx_mapping = {
