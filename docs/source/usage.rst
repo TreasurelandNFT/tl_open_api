@@ -5,14 +5,8 @@ Usage
 
 Endpoint
 --------
-
-all endpoints will require an API Key. Please refer to next chapter regarding API key creation.
-
-API Key Setup
--------------
-
-.. warning:: Never share your API key/secret to ANYONE.
+Mainnet: https://api-mainnet.treasurelands.xyz
 
 Rate Limiting
 -------------
-
+This public API is free to use and the default limit is 120 QPM or 2 QPS
